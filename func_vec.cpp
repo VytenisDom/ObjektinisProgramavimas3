@@ -129,7 +129,7 @@ void mokinys::sortByCool(Vec<mokinys> &k, Vec<mokinys> &l, Vec<mokinys> &p) {
             l.push_back(p[i]);
         }
     }
-    //p.clear();
+    p.~Vec();
     auto ending = std::chrono::steady_clock::now();
     cout<<"Done in : "<<std::chrono::duration <double, milli>(ending - start).count()<<" ms"<<endl;
 }
